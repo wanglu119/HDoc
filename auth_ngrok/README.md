@@ -37,7 +37,7 @@
 >>wget https://raw.githubusercontent.com/wanglu119/HDoc/master/auth_ngrok/ngrok_new_client
 >>
 >>添加执行权限:
->>chomd +x ngrok_new_client
+>>chmod +x ngrok_new_client
 >>
 >>
 >>```
