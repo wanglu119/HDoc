@@ -6,7 +6,6 @@
 >>
 >>```
 >>106.13.62.131  frontend.gitlab
->>106.13.62.131  wl.gitlab
 >>
 >>```
 >>
@@ -49,7 +48,7 @@
 >>在ngrok_new_client同级目录下，创建
 >>config/ngrok.cfg
 >>配置文件内容:
->>server_addr: "wl.gitlab:3443"
+>>server_addr: "frontend.gitlab:3443"
 >>trust_host_root_certs: false
 >>auth_token: "xxxx"
 >>```
