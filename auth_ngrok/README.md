@@ -62,11 +62,9 @@
 >>```
 >>./ngrok_new_client -h
 >>
->>Usage of ./ngrok_new_client:
+>>Usage of bin/ngrok_new_client:
 >>  -cpath string
 >>        client config path, default ./config/ngrok.cfg (default "./config/ngrok.cfg")
->>  -httpAddr string
->>        http server address, default 80 (default ":80")
 >>```
 >>
 >>启动client后，在登录`http://frontend.gitlab:8080/`可以创建，穿透通道
