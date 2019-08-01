@@ -1,15 +1,6 @@
 ## 使用说明
 
->**设置hosts**
 >
->>`/etc/hosts`添加如下域名配置:
->>
->>```
->>106.13.62.131  frontend.gitlab
->>
->>```
->>
->>
 >
 >**注册帐号**
 >
@@ -42,17 +33,6 @@
 >>
 >>```
 >>
->>创建配置文件:
->>
->>```
->>在ngrok_new_client同级目录下，创建
->>config/ngrok.cfg
->>配置文件内容:
->>server_addr: "frontend.gitlab:3443"
->>trust_host_root_certs: false
->>auth_token: "xxxx"
->>```
->>
 >>
 >
 >**启动client**
@@ -63,9 +43,22 @@
 >>./ngrok_new_client -h
 >>
 >>Usage of bin/ngrok_new_client:
+>>  -authToken string
+>>        auth token, default ''
 >>  -cpath string
->>        client config path, default ./config/ngrok.cfg (default "./config/ngrok.cfg")
+>>        client config path, default ''
+>>  -serAddr string
+>>        server address, default '106.13.62.131:3443' (default "106.13.62.131:3443")
+>>
 >>```
+>>
+>>启动client
+>>
+>>```
+>>bin/ngrok_new_client -authToken xxxxx
+>>```
+>>
+>>
 >>
 >>启动client后，在登录`http://frontend.gitlab:8080/`可以创建，穿透通道
 >>
